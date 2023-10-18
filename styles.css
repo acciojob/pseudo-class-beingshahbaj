@@ -1,1 +1,24 @@
 /*  your css code here. If applicable */
+#container {
+ margin: 20px;
+ position: relative;
+ display: inline-block;
+}
+
+#container::before,
+#container::after {
+ content: "Special Text";
+ position: absolute;
+ color: #f00;
+ font-size: 20px;
+}
+
+#container::before {
+ top: -1.2em;
+ left: -20px;
+}
+
+#container::after {
+ bottom: -1.2em;
+ right: -20px;
+}
